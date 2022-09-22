@@ -1,0 +1,2 @@
+Se crea un script donde vamos a utilizar el objeto de fecha de JS para tomar los datos necesarios y evaluarlos en el
+condicional if para detectar automáticamente la estación del año actual.
