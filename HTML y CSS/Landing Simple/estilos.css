@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+#chat {
+    position: fixed;
+    width: 250px;
+    height: 40px;
+    bottom: 0;
+    right: 29px;
+    background: rgb(148, 50, 151);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Rampart One', cursive;
+    font-size: 20px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    
+    
+}
+
+    /*
+        Estilos <header> e hijos:
+    
+    <Header> con 1000px ancho y 120px alto. Fondo para visualizar la caja, luego sacarlo (#444). 
+    Posición de la caja "relative", definir su ubicación en el centro y un margin vertical de 20px.
+
+    #logo: del lado izquierdo poner el <div> que contiene el id "logo" con una posición "absolute"
+    que nos pueda dejar mover la caja dentro del contenedor padre. La posicón debe tener un top 30px y left 30px. La 
+    caja debe tener un ancho de 200px y alto de 66px. Fondo #ccc para visualizar cambios.
+
+    .redes: Posición absolute para luego poner su contenido a la derecha. La clase debe tener un width y height de 42px, 
+    fondo #ccc para visualizar los cambios y border-radius 100%. Luego de ingresar el contenido alinearlo al centro
+    de la caja.
+
+    #icono1/ 2/ 3: Ubicar su posicion en top y right para colocarlos a la derecha de la pantalla.
+    
+    */ 
+
+header {
+    position: relative; /* Configuramos posición */
+    margin: 20px auto; /* Definimos posición relativa al centro */
+    width: 1000px;
+    height: 120px;
+}
+
+#logo {
+    position: absolute; /* nos deja mover la caja dentro de la principal */
+    top: 30px;
+    left: 30px;
+    width: 200px;
+    height: 66px;
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 66px;
+}
+
+.redes {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    background: #ccc;
+    border-radius: 100%;
+}
+
+#icono1 {
+    top: 42px;
+    right: 120px;
+}
+
+#icono2 {
+    top: 42px;
+    right: 71px;
+}
+
+#icono3 {
+    top: 42px;
+    right: 20px;
+}
+
+
+    /* 
+       Esilos <nav> e hijos.
+
+    <Nav> con 1000px de ancho 48px de alto. Fondo #aaa para visualizar cambios. Centrar la caja debajo de "header".
+
+    .botones: Debemos cambiar el flujo de la lista a horizontal, usamos el atributo "float" con valor "left", 
+    los elementos cambian el flujo de su disposicion a "horizontal y de izquierda a derecha". Deben tener 
+    un margin de 0px vertical para no cambiar la posición de la caja pero separarlos con 2px horizontal. Hacer un width
+    de 196px y height de 48px. Fondo #333 para visualizar los cambios.
+    */
+
+nav {
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 48px;
+}
+
+a .botones:hover {
+    background: rgba(100,0,255,.4);
+}
+
+.botones {
+    float: left;
+    margin: 0 2px;
+    width: 196px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-family: 'Rampart One', cursive;
+    color: white;
+    background: rgba(100,0,255,1);
+}
+
+
+    /*
+        Estilos Caja #top
+
+    #top: Hacerlo relative al body. Debe quedar alineado con las demas cajas principales y un margin vertical de 20px.
+    Mismo ancho que las cajas superiores y height de 192px. Fondo #888.
+
+    #top ul: Agrandar a 1010px el width para que las cajas <li> queden centradas.
+
+    #top ul li: cambiar el flujo de la lista a horizontal, luego separar los margenes de la lista, como la caja
+    padre tiene 1000px cada width de cada <li> debe tener 333px y mismo height que #top. Luego de controlar los arreglos
+    nos daremos cuenta que nos sobraban 10px que lo agregamos a la caja del <ul> y acomodamos el width de este selector
+    a 326px para que entren los 3 elementos alineados.
+    */
+
+#top {
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 192px;
+    text-align: center;
+}
+
+#top ul {
+    width: 1010px;
+    height: 192px;
+}
+
+#top ul li {
+    float: left; /* Lista de vertical a horizontal */
+    margin-right: 10px;
+    width: 326px;
+    height: 192px;
+}
+
+#top ul li img {
+    border-radius: 100%;
+    height: 100px;
+}
+
+#top ul li p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+
+    /* 
+        Estilos <section>
+    
+    section: Darle una position relative, centrado y 20px de margin. Width 1000px y Height 453px. Background #888.
+
+    aside#izq: Position absolute colocado en el lado izquierdo (0,0). Width de 200px y height de 453px. Fondo #333.
+
+    article: position absolute, mover left 200px (porque el lado izquierdo tiene un width de 200px). Width 600px 
+    y height de 453px. Fondo coral.
+
+    aside#der: position absolute colocado en el lado derecho (0,0). Width 200px y height 453px. Fondo #333
+    */
+
+section {
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 453px;
+}
+
+
+/* Lado izquierdo */
+aside#izq {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 453px;
+}
+
+aside#izq ul {
+    margin-top: 100px;
+}
+
+aside#izq ul li {
+    background: #aaa;
+    padding: 10px;
+    margin: 2px 10px;
+    list-style: square;
+    list-style-position: inside;
+}
+
+aside#izq ul li a {
+    text-decoration: none;
+}
+
+article {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: 600px;
+    height: 453px;
+}
+
+article h1 {
+    font-family: 'Rampart One', cursive;
+    font-size: 40px;
+    margin: 20px;
+}
+
+article p {
+    margin: 5px 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+article p img {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Columna derecha */
+aside#der {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 453px;
+}
+
+aside#der h1 {
+    margin-top: 47px;
+    margin-bottom: 5px;
+    width: 213px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(100,0,255,1);
+    color: white;
+}
+
+aside#der input {
+    padding: 16px;
+    margin: 5px 0;
+    width: 176px;
+}
+    /*
+        Estilos <footer>
+    
+    position relative (caja principal), centrado en el medio con un margin vertical de 20px. Width de 100px y height
+    de 70px. Fondo #888.
+    */
+
+footer {
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    background: rgba(100,0,255,1);
+}

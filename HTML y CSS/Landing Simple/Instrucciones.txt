@@ -1,0 +1,11 @@
+Crear una barra de navegacion que contenga una lista no organizada de 5 elementos y para cada elemento una clase llamada "botones".
+
+Crear un div con id "top" que sería la caja principal de la parte superior, dentro del div crear otra lista <ul> con 3 elementos.
+
+Crear la caja seccion con <section>, dentro hacer un <aside> izquierdo, la caja del <article> y un <aside> derecho.
+
+Formatear el diseño universal por defecto a 0 y sacar el diseño por defecto de listas a "none".
+
+Fuente "sans-serif".
+
+Finalmente crear el footer.
