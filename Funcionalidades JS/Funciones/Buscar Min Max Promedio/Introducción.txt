@@ -1,0 +1,2 @@
+En este script, se crean funciones para buscar el numero máximo, minimo en un arrelo. En base a esos resultados
+podemos calcular el promedio general.
