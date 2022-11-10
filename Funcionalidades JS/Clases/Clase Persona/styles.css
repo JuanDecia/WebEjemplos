@@ -1,0 +1,22 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: aliceblue;
+}
+
+main {
+    max-width: 85%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(40, 109, 109);
+}
+
+.cont-resultado {
+    padding: 8px 0;
+}
